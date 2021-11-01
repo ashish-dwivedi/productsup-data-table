@@ -1,0 +1,40 @@
+@import 'src/styles/colors';
+
+
+mat-sidenav {
+  width: 25vw;
+  padding: 20px;
+  //overflow: auto;
+  //height: calc(100vh - 64px);
+}
+
+.table-wrapper {
+  max-width: 100%;
+  overflow-x: auto;
+  height: calc(100vh - 160px);
+
+  table {
+    tr {
+      height: 100px;
+
+      th {
+        text-transform: capitalize;
+      }
+
+      &:nth-of-type(odd) {
+        td {
+          background-color: $grey;
+        }
+      }
+
+      td, th {
+        padding: 0 10px;
+        max-width: 200px;
+        overflow: hidden;
+        white-space: pre;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+

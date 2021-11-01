@@ -1,0 +1,24 @@
+@import 'src/styles/colors';
+
+mat-toolbar {
+  padding: 0 10vw;
+  background: transparent;
+
+  mat-toolbar-row {
+    display: flex;
+    background: transparent;
+    justify-content: space-between;
+
+    .toolbar-actions {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-button {
+      mat-icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
